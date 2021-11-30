@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=title\ score\ highscore
+comment0.target=ScoreBoard(java.lang.String,\ int,\ int)
+comment1.params=scores
+comment1.target=ScoreBoard(int[])
+comment2.params=
+comment2.target=ScoreBoard()
+comment3.params=bol
+comment3.target=boolean\ makeCredits(boolean)
+comment4.params=header\ title\ score\ highscore
+comment4.target=void\ makeScore(java.lang.String,\ java.lang.String,\ int,\ int)
+comment5.params=scores
+comment5.target=void\ makelist(int[])
+numComments=6
