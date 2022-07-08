@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.Color;
+
 
 /**
  * A Counter class that allows you to display a numerical value on screen.
@@ -72,23 +72,23 @@ public class Counter extends Actor
     }
     public int addPoints(int linesCleared){
         if(linesCleared==1){
-            value+=10;
-            target+=10;
+            setValue(value+10);
+            updateImage();
             return 10;
         }
         else if(linesCleared==2){
-            value+=30;
-            target+=30;
+            setValue(value+30);
+            updateImage();
             return 30;
         }
         else if(linesCleared==3){
-            value+=60;
-            target+=60;
+            setValue(value+60);
+            updateImage();
             return 60;
         }
         else if(linesCleared==4){
-            value+=100;
-            target+=100;
+            setValue(value+100);
+            updateImage();
             return 100;
         }
         updateImage();

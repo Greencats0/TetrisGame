@@ -1,6 +1,6 @@
 
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.*;
+//import java.*;
 import java.util.*;
 import java.util.ArrayList;
 
@@ -97,52 +97,61 @@ public class Game extends World
             delayTime--;
         }
         else{
-            if(scoreCompleted>=500){
-                scoreCompleted-=500;
+            if(scoreCompleted>=300){
+                scoreCompleted-=300;
                 if(level==1){
                     level=2;
                     backgroundMusic.stop ();
                     backgroundMusic = new GreenfootSound  ("Level 2.mp3");
+                    backgroundMusic.playLoop();
                 }
                 else if(level==2){
                     level=3;
                     backgroundMusic.stop ();
                     backgroundMusic = new GreenfootSound  ("Level 3.mp3");
+                    backgroundMusic.playLoop();
                 }
                 else if(level==3){
                     level=4;
                     backgroundMusic.stop ();
                     backgroundMusic = new GreenfootSound  ("Level 4.mp3");
+                    backgroundMusic.playLoop();
                 }
                 else if(level==4){
                     level=5;
                     backgroundMusic.stop ();
                     backgroundMusic = new GreenfootSound  ("Level 5.mp3");
+                    backgroundMusic.playLoop();
                 }
                 else if(level==5){
                     level=6;
                     backgroundMusic.stop ();
                     backgroundMusic = new GreenfootSound  ("Level 6.mp3");
+                    backgroundMusic.playLoop();
                 }
                 else if(level==6){
                     level=7;
                     backgroundMusic.stop ();
                     backgroundMusic = new GreenfootSound  ("Level 7.mp3");
+                    backgroundMusic.playLoop();
                 }
                 else if(level==7){
                     level=8;
                     backgroundMusic.stop ();
                     backgroundMusic = new GreenfootSound  ("Level 8.mp3");
+                    backgroundMusic.playLoop();
                 }
                 else if(level==8){
                     level=9;
                     backgroundMusic.stop ();
                     backgroundMusic = new GreenfootSound  ("Level 9.mp3");
+                    backgroundMusic.playLoop();
                 }
                 else if(level==9){
                     level=10;
                     backgroundMusic.stop ();
                     backgroundMusic = new GreenfootSound  ("Level 10.mp3");
+                    backgroundMusic.playLoop();
                 }
                 
                 if(level==10){
@@ -209,7 +218,7 @@ public class Game extends World
                         makeIt();
                     }
                 }
-                thing.delay (4);
+                thing.delay (15);
             }
 
             //Rotates the Shape
@@ -394,8 +403,8 @@ public class Game extends World
             }
         }
         if(linesCleared>0){
-            redraw();
             scoreCompleted+=scorecount.addPoints(linesCleared);
+            redraw();
         }
 
     }
@@ -500,7 +509,7 @@ public class Game extends World
     }
 
     public void spawner(){
-        nextShape=thing.getRandomNumber(6);
+        nextShape=thing.getRandomNumber(7);
         String spawner=""+nextShape;
         if(spawner.indexOf("0")>=0){
             nextBlock=new Cube();

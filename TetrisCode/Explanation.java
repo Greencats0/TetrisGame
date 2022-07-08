@@ -18,14 +18,14 @@ public class Explanation extends Actor
     public void window(){
          
         GreenfootImage board=new GreenfootImage(width,height);
-        board.setColor(new Color(0, 0, 0, 160));
+        board.setColor(new greenfoot.Color(0, 0, 0, 160));
         board.fillRect(0, 0, width, height);
-        board.setColor(new Color(255, 255, 255, 100));
+        board.setColor(new greenfoot.Color(255, 255, 255, 100));
         board.fillRect(5, 5, width-10, height-10);
-        Font font = board.getFont();
+        greenfoot.Font font = board.getFont();
         font = font.deriveFont(fontsize);
         board.setFont(font);
-        board.setColor(Color.WHITE);
+        board.setColor(greenfoot.Color.WHITE);
         board.drawString("TETRIS",225,60);
         board.drawString("Controls:",20,120);
         board.drawString("Press up arrow to turn block.",20, 165);
@@ -38,14 +38,14 @@ public class Explanation extends Actor
     }
     public void bugs(){
         GreenfootImage board=new GreenfootImage(width,height);
-        board.setColor(new Color(0, 0, 0, 160));
+        board.setColor(new greenfoot.Color(0, 0, 0, 160));
         board.fillRect(0, 0, width, height);
-        board.setColor(new Color(255, 255, 255, 100));
+        board.setColor(new greenfoot.Color(255, 255, 255, 100));
         board.fillRect(5, 5, width-10, height-10);
-        Font font = board.getFont();
+        greenfoot.Font font = board.getFont();
         font = font.deriveFont(fontsize);
         board.setFont(font);
-        board.setColor(Color.WHITE);
+        board.setColor(greenfoot.Color.WHITE);
         board.drawString("Bugs",225,60);
         board.drawString("There are no bugs currently found.",20,120);
         board.drawString("Please inform us otherwise.",20, 165);
